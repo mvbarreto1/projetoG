@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gotham Login</title>
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1><a href="../index.html">Gotham System</a></h1>
+  </header>
+
+
+  <main class="principal">
+
+    <form class="formulario" id="forms">
+      <h2>ACESSE SUA BATCONTA</h2>
+      <label for="user">Nome de usuário</label>
+      <input type="text" id="user" placeholder="Digite o usuário:" required>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Digite a senha: " required>
+
+
+      <fieldset>
+        <legend>Tipo de conta</legend>
+        <label>
+          <input type="radio" name="tipo" value="admin" checked />
+          Administrador
+        </label>
+        <label>
+          <input type="radio" name="tipo" value="usuario" />
+          Usuário comum
+        </label>
+      </fieldset>
+
+      <button id="botao">Logar</button>
+      <a href="../templates/cadastro.html">Não tem uma conta? Cadastre-se</a>
+
+    </form>
+
+  </main>
+
+
+  <script src="../script/index.js"></script>
+</body>
+
+</html>
